@@ -1,0 +1,18 @@
+https://www.youtube.com/watch?v=PHsC_t0j1dU
+
+cheatcode dbt:
+
+ source dbt-env/bin/activate 
+
+ nano ~/.dbt/profiles.yml
+
+Rodei o docker compose up mas fiquei sem paciência para esperar dar o erro no elt-dbt;
+
+
+1:54:32
+
+Talvez seja melhor eu aprender dbt em um projeto separado.
+
+
+Não é não, força que vc achou um bug diferente, agora é rodar o dbt-env, 
+mas faça isso com paciência! Você vai conseguir!
