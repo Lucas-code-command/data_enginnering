@@ -6,13 +6,10 @@ cheatcode dbt:
 
  nano ~/.dbt/profiles.yml
 
-Rodei o docker compose up mas fiquei sem paciência para esperar dar o erro no elt-dbt;
+Rodei o docker compose up, deu certo mas devolveu alguns erros;
+o docker está rodando e está configurado, o problema está no DBT, está devolvendo 3 erros.
 
 
 1:54:32
 
-Talvez seja melhor eu aprender dbt em um projeto separado.
 
-
-Não é não, força que vc achou um bug diferente, agora é rodar o dbt-env, 
-mas faça isso com paciência! Você vai conseguir!
