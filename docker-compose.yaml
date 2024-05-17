@@ -39,25 +39,6 @@ services:
     depends_on:
       - destination_postgres
 
-  dbt:
-    image: ghcr.io/dbt-labs/dbt-postgres:latest
-    command:
-      [
-        "run",
-        "--profiles-dir", "/root",
-        "--project-dir", "/dbt",
-        "--full-refresh"
-      ]
-    networks:
-      - elt_network
-    volumes:
-      - ./custom_postgres:/dbt
-      - ~/.dbt:/root
-    depends_on:
-      - elt_script
-    environment:
-      DBT_PROFILE: default
-      DBT_TARGET: dev
 
 networks:
   elt_network:

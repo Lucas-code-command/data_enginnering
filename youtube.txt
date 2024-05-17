@@ -1,5 +1,11 @@
 https://www.youtube.com/watch?v=PHsC_t0j1dU
 
+Cheatcode docker:
+ docker exec -it tutorial-destination_postgres-1 psql -U postgres
+
+ \c destination_db
+ \dt
+
 cheatcode dbt:
 
  source dbt-env/bin/activate 
@@ -7,8 +13,12 @@ cheatcode dbt:
  nano ~/.dbt/profiles.yml
 
 Rodei o docker compose up, deu certo mas devolveu alguns erros;
-o docker está rodando e está configurado, o problema está no DBT, está devolvendo 3 erros.
+dbt-1                   | 19:12:53  Encountered an error:
+dbt-1                   | Database Error
+dbt-1                   |   connection to server at "tutorial-destination_postgres-1" (172.26.0.3), port 5434 failed: Connection refused
+dbt-1                   |   	Is the server running on that host and accepting TCP/IP connections?
 
+Acredito que o erro seja na versão do Postgres, talvez se eu aprender DBT separado, seja melhor
 
 1:54:32
 
